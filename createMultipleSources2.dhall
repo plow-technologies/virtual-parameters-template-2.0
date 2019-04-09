@@ -8,10 +8,12 @@ in
 -- let UnrolledSource = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/UnrolledSource.dhall
 let UnrolledSource = ./UnrolledSource.dhall
 in
--- let NeededSources = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/NeededSources.dhall
-let NeededSources = ./NeededSources.dhall
+
+-- let NeededSources = ./NeededSources.dhall
+let NeededSources = https://raw.githubusercontent.com/plow-technologies/virtual-parameters-template-2.0/master/NeededSources.dhall					 
 in
-let VirtualParameter =  https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VirtualParameter.dhall
+let VirtualParameter = https://raw.githubusercontent.com/plow-technologies/virtual-parameters-template-2.0/master/VirtualParameter.dhall
+
 in let sources = [
     {
         companyId = +42,
