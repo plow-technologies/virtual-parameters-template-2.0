@@ -1,9 +1,9 @@
-let VpidSource = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VpidSource.dhall
+let VpidSource = https://raw.githubusercontent.com/plow-technologies/virtual-parameters-template-2.0/master/VpidSource.dhall
+in let NeededSources = https://raw.githubusercontent.com/plow-technologies/virtual-parameters-template-2.0/master/NeededSources.dhall					 
+-- in let NeededSources = ./NeededSources.dhall
 
--- in let NeededSources = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/NeededSources.dhall
-in let NeededSources = ./NeededSources.dhall
-in let VirtualParameter = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VirtualParameter.dhall
-					 
+in let VirtualParameter = https://raw.githubusercontent.com/plow-technologies/virtual-parameters-template-2.0/master/VirtualParameter.dhall
+
 in let buildWapitiSet = \(neededSources:NeededSources) -> [ 
     { vpids =
       [] : List Integer
